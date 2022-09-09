@@ -41,6 +41,10 @@
     - ホ゜ケット エンシ゛ン のような、Mac OS XでPDFやFinderからのコピペで発生する濁点のチェック
 - https://github.com/textlint-rule/textlint-rule-no-invalid-control-character
     - 制御文字の検出
+- https://github.com/textlint-rule/textlint-rule-no-zero-width-spaces
+    - ゼロ幅スペースの検出
+- https://github.com/xl1/textlint-rule-no-kangxi-radicals
+    - 康煕部首の検出
 
 ## Usage
 
@@ -99,7 +103,13 @@ Options
              "no-nfd": true,
              // https://github.com/textlint-rule/textlint-rule-no-invalid-control-character
              // 制御文字の検出
-             "no-invalid-control-character": true
+             "no-invalid-control-character": true,
+             // https://github.com/textlint-rule/textlint-rule-no-zero-width-spaces
+             // ゼロ幅スペースの検出
+             "no-zero-width-spaces": true,
+             // https://github.com/xl1/textlint-rule-no-kangxi-radicals
+             // 康煕部首の検出
+             "no-kangxi-radicals": true
         }
     }
 }

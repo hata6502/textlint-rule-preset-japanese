@@ -9,9 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 14
       - name: Set Env
@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: |
           yarn install
-          npm run website -- --metadataversion="${CURRENT_VERSION}"
+          npm run website -- --metadataVersion="${CURRENT_VERSION}"
         env:
           CURRENT_VERSION: ${{ env.CURRENT_VERSION }}
         working-directory: example/

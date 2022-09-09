@@ -1,18 +1,24 @@
-# [6.0.0](https://github.com/textlint-ja/textlint-rule-preset-japanese/compare/v5.0.0...v6.0.0) (2021-04-25)
+# textlint-rule-preset-japanese
 
+## 7.0.0
+### Major Changes
 
-### Bug Fixes
+- aefefdc: :sparkles: [textlint-rule/textlint-rule-sentence-length v3.0.0](https://github.com/textlint-rule/textlint-rule-sentence-length/releases/v3.0.0)へアップデート
+  
+  3.0.0では、デフォルトでは次のようなURLそのものがリンクとなっているケースをカウントしないようになっています。
+  
+  > Very long <https://example.com?longlonglong> URL.
+- ffaf6f2: :sparkles: [textlint-rule/textlint-rule-no-invalid-control-character v2.0.0](https://github.com/textlint-rule/textlint-rule-no-invalid-control-character/releases/v2.0.0)へアップデート
+  
+  Imageの`alt`内もデフォルトでチェックするようになりました
+- ffaf6f2: :new: [textlint-rule-no-kangxi-radicals](https://github.com/xl1/textlint-rule-no-kangxi-radicals)を追加
+  
+  [康煕部首](https://ja.wikipedia.org/wiki/%E5%BA%B7%E7%85%95%E9%83%A8%E9%A6%96)（こうきぶしゅ）が含まれる問題を見つけるtextlintルール。
+  詳細は[PDF に謎の漢字が含まれるとき](https://gist.github.com/xl1/940d653451fd96a06618a6df08d5df84)を参照。
+- ffaf6f2: :new: [textlint-rule-no-zero-width-spaces](https://github.com/textlint-rule/textlint-rule-no-zero-width-spaces)を追加
+  
+  目視で見つけることができないため[ゼロ幅スペース](https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AD%E5%B9%85%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9)を見つけるtextlintルール
 
-* **deps:** update dependency @textlint/module-interop to ^1.0.2 ([#46](https://github.com/textlint-ja/textlint-rule-preset-japanese/issues/46)) ([b92f811](https://github.com/textlint-ja/textlint-rule-preset-japanese/commit/b92f811588c074adc34dad4ebee1b0b3e8cf40b1))
-* **deps:** update dependency textlint-rule-max-ten to v4 ([#51](https://github.com/textlint-ja/textlint-rule-preset-japanese/issues/51)) ([b3d655c](https://github.com/textlint-ja/textlint-rule-preset-japanese/commit/b3d655cbf390c1013518fa203565fa9e13cbf3c6))
-* **deps:** update dependency textlint-rule-no-double-negative-ja to v2 ([#52](https://github.com/textlint-ja/textlint-rule-preset-japanese/issues/52)) ([757b979](https://github.com/textlint-ja/textlint-rule-preset-japanese/commit/757b9791d98954c641c0f491519c8cb73632ac5f))
-* **deps:** update dependency textlint-rule-no-doubled-joshi to v4 ([#53](https://github.com/textlint-ja/textlint-rule-preset-japanese/issues/53)) ([9d79c9c](https://github.com/textlint-ja/textlint-rule-preset-japanese/commit/9d79c9c710d2f8cdcd83bae9a8bd0ed8d31d4f62))
-* **deps:** update dependency textlint-rule-no-dropping-the-ra to v3 ([#54](https://github.com/textlint-ja/textlint-rule-preset-japanese/issues/54)) ([136f80d](https://github.com/textlint-ja/textlint-rule-preset-japanese/commit/136f80dea6a63eae384fa35ec2904e504190ef11))
-* **deps:** update dependency textlint-rule-no-mix-dearu-desumasu to v5 ([#55](https://github.com/textlint-ja/textlint-rule-preset-japanese/issues/55)) ([6b5c9df](https://github.com/textlint-ja/textlint-rule-preset-japanese/commit/6b5c9df452c30bc0bebdbc7bee0c5cf57e37160c))
+### Minor Changes
 
-
-
-# [5.0.0](https://github.com/textlint-ja/textlint-rule-preset-japanese/compare/v4.0.4...v5.0.0) (2020-06-10)
-
-
-
+- ffaf6f2: リリースに[Changesets](https://github.com/atlassian/changesets)を使うように変更
